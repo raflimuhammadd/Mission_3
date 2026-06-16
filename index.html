@@ -28,27 +28,33 @@
 
     <div class="auth-page__inner">
       <div class="auth-page__logo">
-        <a href="#" class="logo" onclick="return false;" aria-label="Chill – Halaman Utama">
+
+        <!-- LOGO CHILL -->
+        <!-- <a href="#" class="logo" onclick="return false;" aria-label="Chill – Halaman Utama">
           <span class="logo__icon" aria-hidden="true">
-            <img src="./images/chill-logo.png" alt="Logo Chill" />
+            <img src="./images/chill-logo.png`" alt="Logo Chill" />
           </span>
           <span class="logo__text">Ch<span>ill</span></span>
-        </a>
+        </a> -->
       </div>
 
+      <!-- CARD LOGIN -->
       <div class="auth-card">
-        <h1 class="auth-card__title">Selamat datang</h1>
-        <p class="auth-card__subtitle">Masuk ke akun Chill kamu dan mulai menonton.</p>
+        <div class="class-logo">
+          <img src="./images/chill-logo.png" alt="CHILL" />
+        </div>
+        <h1 class="auth-card__title">Masuk</h1>
+        <p class="auth-card__subtitle">Selamat Datang Kembali!</p>
 
         <div class="auth-card__form">
           <div class="form-group">
-            <label class="form-group__label" for="login-username">Username atau Email</label>
+            <label class="form-group__label" for="login-username">Username</label>
             <input
               class="form-group__input"
               type="text"
               id="login-username"
               name="username"
-              placeholder="Masukkan username atau email"
+              placeholder="Masukkan username"
               autocomplete="username"
             />
           </div>
@@ -82,6 +88,11 @@
             <a href="#" onclick="return false;">Lupa kata sandi?</a>
           </div>
 
+        <p class="auth-card__footer">
+          Belum punya akun? <a href="#" onclick="showPage('register'); return false;">Daftar sekarang</a>
+        </p>
+          
+
           <div class="auth-card__actions">
             <button class="btn btn--primary btn--full btn--lg" type="button" onclick="goToHome()">
               Masuk
@@ -101,10 +112,10 @@
           </div>
         </div>
 
-        <p class="auth-card__footer">
-          Belum punya akun? <a href="#" onclick="showPage('register'); return false;">Daftar sekarang</a>
-        </p>
+
       </div>
+
+      
     </div>
   </div><!-- /page-login -->
 

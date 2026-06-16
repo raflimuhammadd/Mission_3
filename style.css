@@ -127,7 +127,7 @@
     .logo__icon {
       width: 36px;
       height: 36px;
-      background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+      /* background: linear-gradient(135deg, var(--color-primary), var(--color-accent)); */
       border-radius: var(--radius-md);
       display: flex;
       align-items: center;
@@ -135,8 +135,20 @@
       flex-shrink: 0;
     }
     .logo__icon svg { width: 20px; height: 20px; fill: white; }
+    .logo__icon img { width: 163px; height: 44px; }
     .logo__text { color: var(--color-text-primary); }
     .logo__text span { color: var(--color-accent); }
+
+    .card-logo {
+      display: flex;
+      width: 45%;
+      justify-content: center;
+    }
+
+    .card-logo img {
+      width: 163px;
+      height: 44px;
+    }
 
     /* ============================================================
        BUTTONS
@@ -201,7 +213,7 @@
       color: var(--color-text-secondary);
     }
     .form-group__input {
-      background: var(--color-bg-input);
+      background: var(--color-bg-bg);
       border: 1.5px solid var(--color-border-input);
       border-radius: var(--radius-md);
       color: var(--color-text-primary);
@@ -294,15 +306,15 @@
       margin-bottom: var(--sp-40);
     }
     .auth-card {
-      background: transparent;
-      backdrop-filter: blur(24px);
-      -webkit-backdrop-filter: blur(24px);
-      border: 1px solid var(--color-border);
+      background: rgba(24, 26, 28, 0.3);
+      /* backdrop-filter: blur(24px); */
+      /* -webkit-backdrop-filter: blur(24px); */
+      border: 1px solid var(--color-bg);
       border-radius: var(--radius-2xl);
       padding: var(--sp-40);
       width: 100%;
       max-width: 440px;
-      box-shadow: var(--shadow-card), 0 0 60px rgba(124,58,237,0.08);
+      box-shadow: var(--shadow-card), 0 0 60px rgba(24, 26, 28, 0.3);
     }
     .auth-card__title {
       font-size: var(--fs-2xl);
@@ -310,17 +322,28 @@
       letter-spacing: -0.5px;
       margin-bottom: var(--sp-6);
       color: var(--color-text-primary);
+      text-align: center;
     }
     .auth-card__subtitle {
       font-size: var(--fs-sm);
       color: var(--color-text-secondary);
       margin-bottom: var(--sp-32);
+      text-align: center;
     }
     .auth-card__form {
       display: flex;
       flex-direction: column;
       gap: var(--sp-20);
     }
+
+    .auth-card__footer {
+      text-align: center;
+      font-size: var(--fs-sm);
+      color: var(--color-text-secondary);
+      margin-top: var(--sp-24);
+    }
+
+
     .auth-card__forgot {
       text-align: right;
       margin-top: calc(-1 * var(--sp-10));
@@ -337,12 +360,12 @@
       gap: var(--sp-12);
       margin-top: var(--sp-8);
     }
-    .auth-card__footer {
+    /* .auth-card__footer {
       text-align: center;
       font-size: var(--fs-sm);
       color: var(--color-text-secondary);
       margin-top: var(--sp-24);
-    }
+    } */
     .auth-card__footer a {
       color: var(--color-text-link);
       font-weight: 600;
