@@ -40,7 +40,7 @@
 
       <!-- CARD LOGIN -->
       <div class="auth-card">
-        <div class="class-logo">
+        <div class="card-logo">
           <img src="./images/chill-logo.png" alt="CHILL" />
         </div>
         <h1 class="auth-card__title">Masuk</h1>
@@ -84,14 +84,14 @@
             </div>
           </div>
 
-          <div class="auth-card__forgot">
-            <a href="#" onclick="return false;">Lupa kata sandi?</a>
+          <div class="auth-card__links">
+            <p class="auth-card__footer auth-card__footer--login">
+              Belum punya akun? <a href="#" onclick="showPage('register'); return false;">Daftar sekarang</a>
+            </p>
+            <div class="auth-card__forgot">
+              <a href="#" onclick="return false;">Lupa kata sandi?</a>
+            </div>
           </div>
-
-        <p class="auth-card__footer">
-          Belum punya akun? <a href="#" onclick="showPage('register'); return false;">Daftar sekarang</a>
-        </p>
-          
 
           <div class="auth-card__actions">
             <button class="btn btn--primary btn--full btn--lg" type="button" onclick="goToHome()">
@@ -134,15 +134,10 @@
 
     <div class="auth-page__inner">
       <div class="auth-page__logo">
-        <a href="#" class="logo" onclick="return false;" aria-label="Chill – Halaman Utama">
-          <span class="logo__icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8 5v14l11-7z"/></svg>
-          </span>
-          <span class="logo__text">Ch<span>ill</span></span>
-        </a>
       </div>
 
       <div class="auth-card">
+        <img src="./images/chill-logo.png" alt="CHILL" />
         <h1 class="auth-card__title">Buat akun</h1>
         <p class="auth-card__subtitle">Daftar gratis dan nikmati ribuan film & series.</p>
 

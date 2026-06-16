@@ -59,6 +59,7 @@
       --sp-24:  1.5rem;
       --sp-28:  1.75rem;
       --sp-32:  2rem;
+      --sp-37:  2.3125rem;
       --sp-40:  2.5rem;
       --sp-48:  3rem;
       --sp-56:  3.5rem;
@@ -141,8 +142,9 @@
 
     .card-logo {
       display: flex;
-      width: 45%;
+      width: 100%;
       justify-content: center;
+      margin-bottom: var(--sp-37);
     }
 
     .card-logo img {
@@ -159,7 +161,7 @@
       justify-content: center;
       gap: var(--sp-8);
       padding: var(--sp-12) var(--sp-24);
-      border-radius: var(--radius-md);
+      border-radius: var(--radius-2xl);
       font-size: var(--fs-base);
       font-weight: 600;
       line-height: 1;
@@ -186,12 +188,15 @@
     }
     .btn--ghost:hover { border-color: var(--color-primary-light); color: var(--color-primary-light); }
     .btn--google {
-      background: var(--color-google-bg);
-      color: var(--color-google-text);
-      border: none;
+      background: transparent;
+      color: var(--color-text-primary);
+      border: 1px solid var(--color-border);
       font-weight: 500;
     }
-    .btn--google:hover { background: #F5F5F5; }
+    .btn--google:hover {
+      background: rgba(255,255,255,0.1);
+      border-color: var(--color-border-input);
+    }
     .btn--google svg { width: 18px; height: 18px; flex-shrink: 0; }
     .btn--full { width: 100%; }
     .btn--lg { padding: var(--sp-14) var(--sp-32); font-size: var(--fs-md); }
@@ -215,13 +220,16 @@
     .form-group__input {
       background: var(--color-bg-bg);
       border: 1.5px solid var(--color-border-input);
-      border-radius: var(--radius-md);
+      border-radius: var(--radius-2xl);
       color: var(--color-text-primary);
       font-size: var(--fs-base);
       padding: var(--sp-12) var(--sp-16);
       transition: border-color 0.2s, background 0.2s, box-shadow 0.2s;
       outline: none;
       width: 100%;
+      height: 50px;
+      display: flex;
+      align-items: center;
     }
     .form-group__input::placeholder { color: var(--color-text-muted); }
     .form-group__input:focus {
@@ -303,7 +311,7 @@
       min-height: 100vh;
     }
     .auth-page__logo {
-      margin-bottom: var(--sp-40);
+      margin-bottom: var(--sp-37);
     }
     .auth-card {
       background: rgba(24, 26, 28, 0.3);
@@ -313,21 +321,29 @@
       border-radius: var(--radius-2xl);
       padding: var(--sp-40);
       width: 100%;
-      max-width: 440px;
+      max-width: 529px;
+      min-height: 663px;
       box-shadow: var(--shadow-card), 0 0 60px rgba(24, 26, 28, 0.3);
+    }
+    .auth-card__form {
+      display: flex;
+      flex-direction: column;
+      gap: var(--sp-37);
+      max-width: 449px;
+      width: 100%;
+      margin: 0 auto;
     }
     .auth-card__title {
       font-size: var(--fs-2xl);
       font-weight: 800;
-      letter-spacing: -0.5px;
-      margin-bottom: var(--sp-6);
+      letter-spacing: -0.7px;
       color: var(--color-text-primary);
       text-align: center;
     }
     .auth-card__subtitle {
       font-size: var(--fs-sm);
       color: var(--color-text-secondary);
-      margin-bottom: var(--sp-32);
+      margin-bottom: var(--sp-37);
       text-align: center;
     }
     .auth-card__form {
@@ -336,17 +352,33 @@
       gap: var(--sp-20);
     }
 
+    .auth-card__links {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--sp-16);
+      margin-top: calc(-1 * var(--sp-10));
+    }
     .auth-card__footer {
-      text-align: center;
+      text-align: left;
       font-size: var(--fs-sm);
       color: var(--color-text-secondary);
-      margin-top: var(--sp-24);
+      margin-top: var(--sp-4);
+    }
+    .auth-card__footer--login {
+      margin-top: 0;
     }
 
+    .auth-card__footer a {
+      color: var(--color-text-link);
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+    .auth-card__footer a:hover { color: var(--color-accent); }
 
     .auth-card__forgot {
       text-align: right;
-      margin-top: calc(-1 * var(--sp-10));
+      margin-top: 0;
     }
     .auth-card__forgot a {
       font-size: var(--fs-sm);
@@ -357,8 +389,8 @@
     .auth-card__actions {
       display: flex;
       flex-direction: column;
-      gap: var(--sp-12);
-      margin-top: var(--sp-8);
+      gap: var(--sp-37);
+      margin-top: var(--sp-37);
     }
     /* .auth-card__footer {
       text-align: center;
@@ -366,12 +398,12 @@
       color: var(--color-text-secondary);
       margin-top: var(--sp-24);
     } */
-    .auth-card__footer a {
+    /* .auth-card__footer a {
       color: var(--color-text-link);
       font-weight: 600;
       transition: color 0.2s;
     }
-    .auth-card__footer a:hover { color: var(--color-accent); }
+    .auth-card__footer a:hover { color: var(--color-accent); } */
 
     /* Background decoration for auth pages */
     .auth-deco {
