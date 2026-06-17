@@ -82,3 +82,27 @@
       if (on)  on.style.display  = volumeOn ? '' : 'none';
       if (btn) btn.setAttribute('aria-label', volumeOn ? 'Kontrol volume – aktif' : 'Kontrol volume – dimatikan');
     }
+
+    // ── Profile dropdown ──────────────────────────────────────────
+    function toggleProfileDropdown(e) {
+      if (e) e.stopPropagation();
+      var btn = event.target.closest('.header-account-trigger');
+      var dropdown = btn ? btn.parentElement.querySelector('.profile-dropdown') : null;
+      if (!btn || !dropdown) return;
+      var isOpen = dropdown.classList.contains('profile-dropdown--open');
+      btn.setAttribute('aria-expanded', String(!isOpen));
+      dropdown.classList.toggle('profile-dropdown--open', !isOpen);
+    }
+
+    document.addEventListener('click', function(e) {
+      var profileMenus = document.querySelectorAll('.profile-menu');
+      profileMenus.forEach(function(menu) {
+        var btn = menu.querySelector('.header-account-trigger');
+        var dropdown = menu.querySelector('.profile-dropdown');
+        if (!btn || !dropdown) return;
+        if (!menu.contains(e.target)) {
+          btn.setAttribute('aria-expanded', 'false');
+          dropdown.classList.remove('profile-dropdown--open');
+        }
+      });
+    });
