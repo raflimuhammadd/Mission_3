@@ -106,3 +106,16 @@
         }
       });
     });
+
+    // ── Footer accordion toggle ───────────────────────────────────
+    function toggleFooterSection(btn) {
+      if (!btn) return;
+      var expanded = btn.getAttribute('aria-expanded') === 'true';
+      var targetId = btn.getAttribute('aria-controls');
+      var linksSection = document.getElementById(targetId);
+      
+      if (!linksSection) return;
+      
+      btn.setAttribute('aria-expanded', String(!expanded));
+      linksSection.classList.toggle('site-footer__links--hidden', expanded);
+    }

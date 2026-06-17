@@ -40,12 +40,11 @@
       <div class="auth-page__logo">
 
         <!-- LOGO CHILL -->
-        <!-- <a href="#" class="logo" onclick="return false;" aria-label="Chill – Halaman Utama">
-          <span class="logo__icon" aria-hidden="true">
-            <img src="./images/chill-logo.png`" alt="Logo Chill" />
-          </span>
-          <span class="logo__text">Ch<span>ill</span></span>
-        </a> -->
+         <!-- <a href="#" class="logo" onclick="return false;" aria-label="Chill – Halaman Utama">
+           <span class="logo__icon" aria-hidden="true">
+             <img src="./images/chill-logo.png`" alt="Logo Chill" />
+           </span><span class="logo__text">Ch<span>ill</span></span>
+         </a> -->
       </div>
 
       <!-- CARD LOGIN -->
@@ -253,8 +252,7 @@
           <a href="#" class="logo" onclick="return false;" aria-label="Chill – Beranda">
             <span class="logo__icon" aria-hidden="true">
               <img src="./images/chill-vect.png" alt="Logo Chill" />
-            </span>
-            <span class="logo__text">CHILL</span>
+            </span><span class="logo__text">CHILL</span>
           </a>
         </div>
 
@@ -929,21 +927,23 @@
         <div class="site-footer__inner">
           <!-- Brand -->
           <div class="site-footer__brand">
-            <a href="#" class="logo" onclick="return false;" aria-label="Chill">
+            <a href="#" class="logo logo--footer" onclick="return false;" aria-label="Chill">
               <span class="logo__icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8 5v14l11-7z"/></svg>
-              </span>
-              <span class="logo__text">Ch<span>ill</span></span>
+                <img src="./images/chill-logo.png" alt="Logo Chill" />
+              </span><span class="logo__text">CHILL</span>
             </a>
             <p class="site-footer__tagline">
               Nikmati ribuan film dan series favorit kamu kapan saja, di mana saja.
             </p>
           </div>
 
-          <!-- Genre -->
-          <div class="site-footer__col">
-            <h3 class="site-footer__col-title">Genre Film</h3>
-            <nav class="site-footer__links" aria-label="Genre film">
+          <!-- Genre Accordion -->
+          <div class="site-footer__col site-footer__col--collapsible">
+            <button class="site-footer__col-title site-footer__col-toggle" type="button" onclick="toggleFooterSection(this)" aria-expanded="false" aria-controls="genre-links">
+              Genre
+              <svg class="site-footer__col-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+            </button>
+            <nav class="site-footer__links site-footer__links--hidden" id="genre-links" aria-label="Genre film">
               <a href="#" class="site-footer__link" onclick="return false;">Aksi</a>
               <a href="#" class="site-footer__link" onclick="return false;">Drama</a>
               <a href="#" class="site-footer__link" onclick="return false;">Komedi</a>
@@ -953,10 +953,13 @@
             </nav>
           </div>
 
-          <!-- Bantuan -->
-          <div class="site-footer__col">
-            <h3 class="site-footer__col-title">Bantuan</h3>
-            <nav class="site-footer__links" aria-label="Tautan bantuan">
+          <!-- Bantuan Accordion -->
+          <div class="site-footer__col site-footer__col--collapsible">
+            <button class="site-footer__col-title site-footer__col-toggle" type="button" onclick="toggleFooterSection(this)" aria-expanded="false" aria-controls="bantuan-links">
+              Bantuan
+              <svg class="site-footer__col-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+            </button>
+            <nav class="site-footer__links site-footer__links--hidden" id="bantuan-links" aria-label="Tautan bantuan">
               <a href="#" class="site-footer__link" onclick="return false;">FAQ</a>
               <a href="#" class="site-footer__link" onclick="return false;">Kontak Kami</a>
               <a href="#" class="site-footer__link" onclick="return false;">Kebijakan Privasi</a>
