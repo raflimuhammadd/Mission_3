@@ -11,23 +11,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap" rel="stylesheet">
 
-
-  <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-   -->
-  
   <link rel="stylesheet" href="style.css" />
   <script src="app.js"></script>
 
 </head>
 <body>
 
- <!-- =======================
-       PAGE: HOME (BERANDA)
-  ======================= -->
-  <!-- <div id="page-home" class="page" role="main"> -->
-
+ <!-- ===== Home Page ===== -->
     <!-- HEADER -->
     <header class="site-header" id="site-header" role="banner">
       <div class="site-header__gradient" aria-hidden="true"></div>
@@ -126,6 +116,7 @@
             <span class="hamburger__line" aria-hidden="true"></span>
             <span class="hamburger__line" aria-hidden="true"></span>
           </button>
+
         </div>
       </div>
     </header>
@@ -205,11 +196,9 @@
     </nav>
 
 
-    <!-- SECTION 1: HERO -->
+    <!-- ===== Hero Section ===== -->
     <section class="hero" aria-label="Film unggulan">
       <div class="hero__bg" aria-hidden="true">
-        <!-- Cinematic hero background -->
-        <!-- <svg class="hero__bg-img" viewBox="0 0 1440 900" xmlns="./images/hero-bg.svg" preserveAspectRatio="xMidYMid slice"> -->
         <img class="hero__bg-img" src="./assets/images/beranda.png" alt="" />
         </svg>
         <div class="hero__bg-gradient"></div>
@@ -256,7 +245,7 @@
     </section>
 
 
-    <!-- SECTION 2: LANJUTKAN MENONTON -->
+    <!-- ===== Continue Watching ===== -->
     <section class="section continue-section" aria-labelledby="section-continue-title">
       <div class="container">
         <div class="section__header">
@@ -266,12 +255,16 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
         </div>
-        <div class="cards-row" role="list" aria-label="Film yang sedang ditonton">
+        <div class="cards-scroll-wrapper">
+          <button class="cards-scroll-btn cards-scroll-btn--left" type="button" aria-label="Scroll left">
+            <img src="./assets/images/arrow-left.png" alt="" />
+          </button>
+          <div class="cards-row" role="list" aria-label="Film yang sedang ditonton">
+            
           <!-- Card 1 -->
           <article class="movie-card movie-card--wide" role="listitem">
             <div class="movie-card__thumb-placeholder" aria-hidden="true">
               <img class="movie-card__thumb-img" src="./assets/images/lanjutfilm.png" alt="" />
-              <!-- <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 3v2h-2V3H8v2H6V3H4v18h2v-2h2v2h8v-2h2v2h2V3h-2zM8 17H6v-2h2v2zm0-4H6v-2h2v2zm0-4H6V7h2v2zm10 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V7h2v2z"/></svg> -->
             </div>
             <div class="movie-card__play-overlay" aria-hidden="true">
               <div class="movie-card__play-btn">
@@ -297,7 +290,6 @@
           <article class="movie-card movie-card--wide" role="listitem">
             <div class="movie-card__thumb-placeholder" aria-hidden="true">
               <img class="movie-card__thumb-img" src="./assets/images/lanjutfilm.png" alt="" />
-              <!-- <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 3v2h-2V3H8v2H6V3H4v18h2v-2h2v2h8v-2h2v2h2V3h-2zM8 17H6v-2h2v2zm0-4H6v-2h2v2zm0-4H6V7h2v2zm10 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V7h2v2z"/></svg> -->
             </div>
             <div class="movie-card__play-overlay" aria-hidden="true">
               <div class="movie-card__play-btn">
@@ -313,8 +305,8 @@
                 </span>
                 <span>Episode 6 • 55m tersisa</span>
               </div>
-              <div class="movie-card__progress" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" aria-label="40% selesai">
-                <div class="movie-card__progress-bar" style="width:40%"></div>
+              <div class="movie-card__progress" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" aria-label="20% selesai">
+                <div class="movie-card__progress-bar" style="width:20%"></div>
               </div>
             </div>
           </article>
@@ -323,7 +315,6 @@
           <article class="movie-card movie-card--wide" role="listitem">
             <div class="movie-card__thumb-placeholder" aria-hidden="true">
               <img class="movie-card__thumb-img" src="./assets/images/lanjutfilm.png" alt="" />
-              <!-- <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 3v2h-2V3H8v2H6V3H4v18h2v-2h2v2h8v-2h2v2h2V3h-2zM8 17H6v-2h2v2zm0-4H6v-2h2v2zm0-4H6V7h2v2zm10 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V7h2v2z"/></svg> -->
             </div>
             <div class="movie-card__play-overlay" aria-hidden="true">
               <div class="movie-card__play-btn">
@@ -349,7 +340,6 @@
           <article class="movie-card movie-card--wide" role="listitem">
             <div class="movie-card__thumb-placeholder" aria-hidden="true">
               <img class="movie-card__thumb-img" src="./assets/images/lanjutfilm.png" alt="" />
-              <!-- <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 3v2h-2V3H8v2H6V3H4v18h2v-2h2v2h8v-2h2v2h2V3h-2zM8 17H6v-2h2v2zm0-4H6v-2h2v2zm0-4H6V7h2v2zm10 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V7h2v2z"/></svg> -->
             </div>
             <div class="movie-card__play-overlay" aria-hidden="true">
               <div class="movie-card__play-btn">
@@ -370,12 +360,16 @@
               </div>
             </div>
           </article>
+          </div>
+          <button class="cards-scroll-btn cards-scroll-btn--right" type="button" aria-label="Scroll right">
+            <img src="./assets/images/arrow-right.png" alt="" />
+          </button>
         </div>
       </div>
     </section>
 
 
-    <!-- SECTION 3: TOP RATING FILM & SERIES HARI INI -->
+    <!-- ===== Top Rating Today ===== -->
     <section class="section" aria-labelledby="section-top-title">
       <div class="container">
         <div class="section__header">
@@ -385,13 +379,16 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
         </div>
-        <div class="cards-row" role="list" aria-label="Film dan series dengan rating teratas">
+        <div class="cards-scroll-wrapper">
+          <button class="cards-scroll-btn cards-scroll-btn--left" type="button" aria-label="Scroll left">
+            <img src="./assets/images/arrow-left.png" alt="" />
+          </button>
+          <div class="cards-row" role="list" aria-label="Film dan series dengan rating teratas">
           <!-- Top 1 -->
           <article class="movie-card" role="listitem">
             <span class="movie-card__rank" aria-hidden="true">1</span>
             <div class="movie-card__thumb-placeholder" aria-hidden="true">
               <img class="movie-card__thumb-img" src="./assets/images/toprating.png" alt="" />
-              <!-- <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 3v2h-2V3H8v2H6V3H4v18h2v-2h2v2h8v-2h2v2h2V3h-2zM8 17H6v-2h2v2zm0-4H6v-2h2v2zm0-4H6V7h2v2zm10 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V7h2v2z"/></svg> -->
             </div>
             <div class="movie-card__play-overlay" aria-hidden="true">
               <div class="movie-card__play-btn">
@@ -523,14 +520,18 @@
                 <span>Series</span>
               </div>
             </div>
-          </article>
-        </div>
-      </div>
-    </section>
+           </article>
+         </div>
+         <button class="cards-scroll-btn cards-scroll-btn--right" type="button" aria-label="Scroll right">
+           <img src="./assets/images/arrow-right.png" alt="" />
+         </button>
+       </div>
+       </div>
+     </section>
 
 
-    <!-- SECTION 4: TRENDING -->
-    <section class="section continue-section" aria-labelledby="section-trending-title">
+      <!-- ===== Trending Films ===== -->
+     <section class="section continue-section" aria-labelledby="section-trending-title">
       <div class="container">
         <div class="section__header">
           <h2 class="section__title" id="section-trending-title">Film <span>Trending</span></h2>
@@ -539,7 +540,11 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
         </div>
-        <div class="cards-row" role="list" aria-label="Film trending">
+        <div class="cards-scroll-wrapper">
+          <button class="cards-scroll-btn cards-scroll-btn--left" type="button" aria-label="Scroll left">
+            <img src="./assets/images/arrow-left.png" alt="" />
+          </button>
+          <div class="cards-row" role="list" aria-label="Film trending">
           <article class="movie-card" role="listitem">
             <span class="movie-card__badge" aria-label="Trending">🔥 Trending</span>
             <div class="movie-card__thumb-placeholder" aria-hidden="true">
@@ -670,14 +675,18 @@
                 <span>2024</span>
               </div>
             </div>
-          </article>
-        </div>
-      </div>
-    </section>
+           </article>
+         </div>
+         <button class="cards-scroll-btn cards-scroll-btn--right" type="button" aria-label="Scroll right">
+           <img src="./assets/images/arrow-right.png" alt="" />
+         </button>
+       </div>
+       </div>
+     </section>
 
 
-    <!-- SECTION 5: RILIS BARU -->
-    <section class="section" aria-labelledby="section-new-title">
+      <!-- ===== New Releases ===== -->
+     <section class="section" aria-labelledby="section-new-title">
       <div class="container">
         <div class="section__header">
           <h2 class="section__title" id="section-new-title">Rilis <span>Baru</span></h2>
@@ -686,7 +695,11 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
         </div>
-        <div class="cards-row" role="list" aria-label="Film dan series rilis baru">
+        <div class="cards-scroll-wrapper">
+          <button class="cards-scroll-btn cards-scroll-btn--left" type="button" aria-label="Scroll left">
+            <img src="./assets/images/arrow-left.png" alt="" />
+          </button>
+          <div class="cards-row" role="list" aria-label="Film dan series rilis baru">
           <article class="movie-card" role="listitem">
             <span class="movie-card__badge" aria-label="Baru">✦ Baru</span>
             <div class="movie-card__thumb-placeholder" aria-hidden="true">
@@ -817,14 +830,18 @@
                 <span>2024</span>
               </div>
             </div>
-          </article>
-        </div>
-      </div>
-    </section>
+           </article>
+         </div>
+         <button class="cards-scroll-btn cards-scroll-btn--right" type="button" aria-label="Scroll right">
+           <img src="./assets/images/arrow-right.png" alt="" />
+         </button>
+       </div>
+       </div>
+     </section>
 
 
-    <!-- FOOTER -->
-    <footer class="site-footer" role="contentinfo">
+      <!-- ===== Footer ===== -->
+     <footer class="site-footer" role="contentinfo">
       <div class="container">
         <div class="site-footer__inner">
           <!-- Brand -->
@@ -849,17 +866,17 @@
             <nav class="site-footer__links site-footer__links--grid site-footer__links--hidden" id="genre-links-footer" aria-label="Genre film">
               <a href="#" class="site-footer__link" onclick="return false;">Aksi</a>
               <a href="#" class="site-footer__link" onclick="return false;">Drama</a>
+              <a href="#" class="site-footer__link" onclick="return false;">Komedi</a>
+              <a href="#" class="site-footer__link" onclick="return false;">Sains & Alam</a>
               <a href="#" class="site-footer__link" onclick="return false;">Anak-anak</a>
-              <a href="#" class="site-footer__link" onclick="return false;">Fantasi Ilmiah &amp; Fantasi</a>
+              <a href="#" class="site-footer__link" onclick="return false;">Fantasi Ilmiah & Fantasi</a>
+              <a href="#" class="site-footer__link" onclick="return false;">Petualangan</a>
+              <a href="#" class="site-footer__link" onclick="return false;">Thriller</a>
               <a href="#" class="site-footer__link" onclick="return false;">Anime</a>
               <a href="#" class="site-footer__link" onclick="return false;">Kejahatan</a>
+              <a href="#" class="site-footer__link" onclick="return false;">Perang</a>
               <a href="#" class="site-footer__link" onclick="return false;">Britania</a>
               <a href="#" class="site-footer__link" onclick="return false;">KDrama</a>
-              <a href="#" class="site-footer__link" onclick="return false;">Komedi</a>
-              <a href="#" class="site-footer__link" onclick="return false;">Petualangan</a>
-              <a href="#" class="site-footer__link" onclick="return false;">Sains &amp; Alam</a>
-              <a href="#" class="site-footer__link" onclick="return false;">Thriller</a>
-              <a href="#" class="site-footer__link" onclick="return false;">Perang</a>
               <a href="#" class="site-footer__link" onclick="return false;">Romantis</a>
             </nav>
           </div>
@@ -880,10 +897,6 @@
         </div>
       </div>
     </footer>
-
-  </div><!-- /page-home -->
-
-
-
+  </div>
 </body>
 </html>
